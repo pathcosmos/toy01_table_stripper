@@ -1,7 +1,6 @@
 # toy01_table_stripper
 
-HTML 문서에서 `<table>` 태그를 제거하는 간단한 도구입니다.
-또한 Oracle 데이터베이스의 테이블 정의를 Excel 파일로 내보내는 스크립트가 포함되어 있습니다.
+Oracle 데이터베이스의 테이블 정의를 Excel 파일로 내보내는 스크립트를 포함한 예제 프로젝트입니다.
 
 ## 개발 환경 설정
 
@@ -13,14 +12,6 @@ uv pip install -e .
 ```
 
 ## 사용법
-
-### 테이블 스트리퍼
-
-HTML 내용을 표준 입력으로 전달하면 `<table>` 요소가 제거된 결과가 출력됩니다.
-
-```bash
-cat sample.html | toy01-table-stripper
-```
 
 ### Oracle 스키마 내보내기
 
@@ -47,7 +38,5 @@ cat sample.html | toy01-table-stripper
 
 ## 프로젝트 구조
 
-- `toy01_table_stripper/__init__.py` – `strip_table` 함수
-- `toy01_table_stripper/main.py` – 커맨드라인 인터페이스
 - `export_table_schema.py` – Oracle 스키마를 Excel로 추출하는 스크립트
 - `pyproject.toml` – 프로젝트 메타데이터와 uv 설정
